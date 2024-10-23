@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> <%= title %> </title>
+    </head>
+
+    <body>
+        <h1> <%= title %> </h1>
+        <ul>
+            <% messages.forEach(message => { %>
+            <hr/>
+                <ul>
+                    <li> sender: <%= message.user %> </li>
+                    <li> text: <%= message.text %> </li>
+                    <li> sent on: <%= message.added %> </li>
+                </ul>
+            <% }) %>
+        </ul>
+    </body>
+</html>
