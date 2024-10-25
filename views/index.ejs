@@ -12,8 +12,10 @@
                     <li> sender: <%= message.user %> </li>
                     <li> text: <%= message.text %> </li>
                     <li> sent on: <%= message.added %> </li>
+                    <a href="/details/<%= message._id %>"> <button> Details </button> </a>
                 </ul>
             <% }) %>
         </ul>
+        <a href="/new"> <button> New message </button> </a> 
     </body>
 </html>
